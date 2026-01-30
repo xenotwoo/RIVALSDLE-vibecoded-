@@ -1,0 +1,29 @@
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
+```
+
+Then:
+1. Commit and push to GitHub
+2. Vercel should auto-redeploy
+3. Try again
+
+---
+
+## **If that doesn't work, here's the full setup:**
+
+**Step 1: Make sure you have a proper React project structure**
+
+Your files should look like:
+```
+your-project/
+├── package.json
+├── public/
+│   └── index.html
+├── src/
+│   ├── index.js
+│   ├── App.jsx (or where your game is)
+│   └── marvel_rivals_wordle.jsx
+└── vercel.json
